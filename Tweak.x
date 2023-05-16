@@ -146,7 +146,7 @@ if (tweakEnabled && isCustomDate2Enabled) {
 static NSString *const domain = @"com.b4db1r3.tappy";
 static NSString *const preferencesNotification = @"com.b4db1r3.tappy/reloadPrefs";
 
-@interface NSUserDefaults (SoundPalette)
+@interface NSUserDefaults (Tappy)
 - (id)objectForKey:(NSString *)key inDomain:(NSString *)domain;
 - (void)setObject:(id)value forKey:(NSString *)key inDomain:(NSString *)domain;
 @end
