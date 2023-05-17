@@ -1,0 +1,10 @@
+Package: com.b4db1r3.tappy
+Name: tappy
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Tap the time systemwide to reveal the date! 
+Depiction: https://b4db1r3.github.io/d3vr3p0/depictions/web/?p=com.b4db1r3.tappy
+SileoDepiction: https://b4db1r3.github.io/d3vr3p0/depictions/native/com.b4db1r3.tappy/depiction.json
+Maintainer: b4db1r3
+Author: b4db1r3
+Section: Tweaks (SystemWide)

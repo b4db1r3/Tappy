@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>enable or disable the tweak, no respring is required for any changes.</string>
+		</dict>
+
+ 		<dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.b4db1r3.tappy</string>
+            <key>key</key>              <string>tweakEnabled</string>
+            <key>label</key>            <string>Enabled</string>
+            <key>PostNotification</key> <string>com.b4db1r3.tappy/reloadPrefs</string>
+        </dict>
+		<dict>
+    <key>cell</key>
+    <string>PSGroupCell</string>
+    <key>footerText</key>
+    <string>Example:w, yyyy-MM-dd (30, 2023-07-28)</string>
+    <key>label</key>
+    <string>1 tap format</string>
+</dict>
+<dict>
+    <key>cell</key>
+    <string>PSSwitchCell</string>
+    <key>default</key>
+    <false/>
+    <key>defaults</key>
+    <string>com.b4db1r3.tappy</string>
+    <key>key</key>
+    <string>isCustomDateEnabled</string>
+    <key>label</key>
+    <string>Enable</string>
+    <key>PostNotification</key>
+    <string>com.b4db1r3.tappy/reloadPrefs</string>
+    <key>group</key>
+    <string>Date Format</string>
+</dict>
+<dict>
+    <key>cell</key>
+    <string>PSEditTextCell</string>
+    <key>label</key>
+    <string>Date Format</string>
+    <key>prompt</key>
+    <string>Input</string>
+    <key>bestGuess</key>
+    <string>dd/MM/yyyy</string>
+    <key>placeholder</key>
+    <string>dd/MM/yyyy</string>
+    <key>PostNotification</key>
+    <string>com.b4db1r3.tappy/reloadPrefs</string>
+    <key>defaults</key>
+    <string>com.b4db1r3.tappy</string>
+    <key>key</key>
+    <string>customFormat</string>
+    <key>group</key>
+    <string>Date Format</string>
+</dict>
+
+<dict>
+    <key>cell</key>
+    <string>PSGroupCell</string>
+    <key>footerText</key>
+    <string>Examples: YYYY-MM-DD (e.g. 2023-04-20)</string>
+    <key>label</key>
+    <string>2 taps format</string>
+</dict>
+		<dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <false/>
+            <key>defaults</key>         <string>com.b4db1r3.tappy</string>
+            <key>key</key>              <string>isCustomDate2Enabled</string>
+            <key>label</key>            <string>Enable</string>
+            <key>PostNotification</key> <string>com.b4db1r3.tappy/reloadPrefs</string>
+        </dict>
+		<dict>
+          <key>cell</key>                   <string>PSEditTextCell</string>
+          <key>label</key>                  <string>Date Format</string>
+          <key>prompt</key>                 <string>Input</string>
+          <key>bestGuess </key>             <string>dd/MM/yyyy</string>
+          <key>placeholder</key>            <string>dd/MM/yyyy</string>
+          <key>PostNotification</key>       <string>com.b4db1r3.tappy/reloadPrefs</string>
+          <key>defaults</key>               <string>com.b4db1r3.tappy</string>
+          <key>key</key>                    <string>customFormat2Taps</string>
+        </dict>
+<dict>
+    <key>cell</key>
+    <string>PSGroupCell</string>
+    <key>footerText</key>
+    <string>Please leave "Custom Date Format" cell empty if you are not using 2 taps.</string>
+    <key>footerFontSize</key>
+    <real>14</real>
+    <key>footerAlignment</key>
+    <integer>1</integer>
+    <key>footerLineSpacing</key>
+    <real>0</real>
+</dict>
+
+
+
+<dict>
+  <key>cell</key>
+  <string>PSGroupCell</string>
+  <key>label</key>
+  <string>Animation Settings (from 0.1 seconds to 5 seconds)</string>
+</dict>
+<dict>
+  <key>cell</key>
+  <string>PSTableCell</string>
+  <key>cellType</key>
+  <string>PSGroupCell</string>
+  <key>label</key>
+  <string>Animation Duration</string>
+  <key>cell</key>
+  <string>PSSliderCell</string>
+  <key>min</key>
+  <real>0.1</real>
+  <key>max</key>
+  <real>5</real>
+  <key>step</key>
+  <real>0.1</real>
+  <key>PostNotification</key>
+  <string>com.b4db1r3.tappy/reloadPrefs</string>
+  <key>defaults</key>
+  <string>com.b4db1r3.tappy</string>
+  <key>key</key>
+  <string>animationDuration</string>
+</dict>
+
+
+
+	</array>
+	<key>title</key>
+	<string>Tappy</string>
+</dict>
+</plist>
